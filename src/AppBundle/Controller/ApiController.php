@@ -23,7 +23,8 @@ class ApiController extends FOSRestController
      */
     public function indexAction(Request $request)
     {
-        $view = $this->view(['toto' => 'tata'], Response::HTTP_OK)->setFormat('json');
+        $format = $request->get('_format','json');
+        $view = $this->view(['toto' => 'tata'], Response::HTTP_OK)->setFormat($format);
         return $view;
 
 
