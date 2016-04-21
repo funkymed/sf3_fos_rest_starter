@@ -1,7 +1,7 @@
 sf3-microkernel + Fos Rest Bundle
 =================================
 
-Author : Cyril Pereira<cyril.pereira@gmail.com>
+Author : Cyril Pereira <cyril.pereira@gmail.com>
 
 Here is a starter to work with Fos Rest Bundle and SF3 in microservice or microkernel
 
@@ -23,7 +23,7 @@ URLs to test
 
 # Add your controller
 
-Add your own controller
+Add your own controller   
 Just edit in src/AppBundle/Controller make a controller who extends FOSRestController
 
 ```php
@@ -63,5 +63,5 @@ class ApiController extends FOSRestController
 
 # More infos
 
-more info on fos rest bundle : http://symfony.com/doc/1.7/bundles/FOSRestBundle/index.html
+more info on fos rest bundle : http://symfony.com/doc/1.7/bundles/FOSRestBundle/index.html   
 Symfony 2 version can be found here : https://github.com/funkymed/fos_rest_starter
