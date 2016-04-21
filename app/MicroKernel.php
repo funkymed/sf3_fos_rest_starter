@@ -34,11 +34,9 @@ class MicroKernel extends Kernel
             $routes->mount('/_wdt', $routes->import('@WebProfilerBundle/Resources/config/routing/wdt.xml'));
             $routes->mount('/_profiler', $routes->import('@WebProfilerBundle/Resources/config/routing/profiler.xml'));
         }
-        $routes->mount('/_profiler', $routes->import('@WebProfilerBundle/Resources/config/routing/profiler.xml'));
 
         //Doc
         $routes->mount('/', $routes->import(__DIR__.'/config/routing.xml'));
-
         //Controllers routes
         $routes->mount('/', $routes->import('@AppBundle/Controller', 'annotation'));
     }
