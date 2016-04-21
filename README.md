@@ -64,4 +64,5 @@ class ApiController extends FOSRestController
 # More infos
 
 more info on fos rest bundle : http://symfony.com/doc/1.7/bundles/FOSRestBundle/index.html   
+Symfony microkernel : http://symfony.com/blog/new-in-symfony-2-8-symfony-as-a-microframework   
 Symfony 2 version can be found here : https://github.com/funkymed/fos_rest_starter
