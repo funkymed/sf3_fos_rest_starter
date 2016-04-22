@@ -15,7 +15,7 @@ class DefaultController extends FOSRestController
     public function indexAction(Request $request)
     {
         $format = $request->get('_format','json');
-        $view = $this->view(['hello' => 'world'], Response::HTTP_OK)->setFormat($format);
+        $view = $this->view(['foo' => 'bar'], Response::HTTP_OK)->setFormat($format);
         return $view;
     }
 }
