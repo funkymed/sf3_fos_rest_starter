@@ -42,7 +42,7 @@ class ApiController extends FOSRestController
     /**
      * @ApiDoc(
      *   resource = true,
-     *   description = "Return true",
+     *   description = "First api test",
      *   statusCodes = {
      *     200 = "Returned when successful",
      *     404 = "Returned when not found"
@@ -52,7 +52,7 @@ class ApiController extends FOSRestController
      */
     public function indexAction(Request $request)
     {
-        $view = $this->view(['toto' => 'tata'], Response::HTTP_OK)->setFormat('json');
+        $view = $this->view(['foo' => 'bar'], Response::HTTP_OK)->setFormat('json');
         return $view;
 
 
